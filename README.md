@@ -9,14 +9,14 @@ Acest proiect constă în implementarea unei aplicații complete de management a
 
 ---
 
-##Repository Git
+## Repository Git
 
 Codul sursă complet este disponibil la adresa:  
 [https://github.com/RadoiAchimPetru/CarRentalApp.git](https://github.com/RadoiAchimPetru/CarRentalApp.git)
 
 
 
-##Livrabilele proiectului
+## Livrabilele proiectului
 
 Structura principală a repository-ului este următoarea:
 - Director `car-rental-spring` – cod sursă backend Spring Boot
@@ -25,9 +25,9 @@ Structura principală a repository-ului este următoarea:
 
 ---
 
-##Pașii de compilare, instalare și rulare
+## Pașii de compilare, instalare și rulare
 
-###Backend (Spring Boot)
+### Backend (Spring Boot)
 
 1. Se descarcă și se instalează **Java JDK 17** (sau versiunea compatibilă).
 2. Se deschide proiectul din directorul `car-rental-spring` într-un IDE (IntelliJ IDEA, Eclipse sau VSCode).
@@ -45,7 +45,7 @@ Structura principală a repository-ului este următoarea:
 
 ---
 
-###Frontend (Angular)
+### Frontend (Angular)
 
 1. Se instalează **Node.js** (versiune LTS) și **npm**.
 2. Se deschide un terminal și se navighează în directorul `car-rental-angular`:
@@ -59,7 +59,7 @@ Structura principală a repository-ului este următoarea:
 
 ---
 
-### ✅ Recomandări finale
+### Recomandări finale
 
 - Asigură-te că **backend-ul** și **frontend-ul** rulează simultan.
 - Dacă este necesar, modifică fișierele de configurare `application.properties` (backend) și `environment.ts` (frontend) pentru a seta corect URL-urile API și conexiunea la baza de date.
@@ -67,7 +67,7 @@ Structura principală a repository-ului este următoarea:
 
 ---
 
-## 📫 Contact
+## Contact
 
 Autor: **Radoi Achim Petru**
 GitHub: [https://github.com/RadoiAchimPetru](https://github.com/RadoiAchimPetru)
