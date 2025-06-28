@@ -1,5 +1,4 @@
-# Car Rental Management Application
-
+# Aplicație web destinată serviciilor de închiriere a autovehiculelor
 ##Descriere generală
 
 Acest proiect constă în implementarea unei aplicații complete de management al închirierilor auto, care permite clienților să caute, să rezerve și să plătească pentru mașini, iar administratorilor să gestioneze flota și rezervările. Proiectul este dezvoltat în două componente principale:
@@ -61,8 +60,8 @@ Structura principală a repository-ului este următoarea:
 
 ### Recomandări finale
 
-- Asigură-te că **backend-ul** și **frontend-ul** rulează simultan.
-- Dacă este necesar, modifică fișierele de configurare `application.properties` (backend) și `environment.ts` (frontend) pentru a seta corect URL-urile API și conexiunea la baza de date.
+- Se asigură că **backend-ul** și **frontend-ul** rulează simultan.
+- Dacă este necesar,se modifică fișierele de configurare `application.properties` (backend) și `environment.ts` (frontend) pentru a seta corect URL-urile API și conexiunea la baza de date.
 - Codul sursă nu include directoarele generate automat (`/target` pentru backend, `/dist` pentru frontend).
 
 ---
