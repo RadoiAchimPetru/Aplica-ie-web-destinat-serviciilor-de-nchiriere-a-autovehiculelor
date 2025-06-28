@@ -11,7 +11,7 @@ Acest proiect constă în implementarea unei aplicații complete de management a
 ## Repository Git
 
 Codul sursă complet este disponibil la adresa:  
-[https://github.com/RadoiAchimPetru/CarRentalApp.git](https://github.com/RadoiAchimPetru/CarRentalApp.git)
+[https://github.com/RadoiAchimPetru/Aplica-ie-web-destinat-serviciilor-de-nchiriere-a-autovehiculelor.git](https://github.com/RadoiAchimPetru/Aplica-ie-web-destinat-serviciilor-de-nchiriere-a-autovehiculelor.git)
 
 
 
