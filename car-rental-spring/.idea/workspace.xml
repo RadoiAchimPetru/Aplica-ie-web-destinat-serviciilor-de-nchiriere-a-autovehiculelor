@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Record" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +55,14 @@
     ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.CarRentalSpringApplication">
+    <configuration name="CarRentalSpringApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="car-rental-spring" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.achim.carrentalspring.CarRentalSpringApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CarRentalSpringApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="car-rental-spring" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.shounoop.carrentalspring.CarRentalSpringApplication" />
@@ -85,6 +92,9 @@
       <workItem from="1750919011875" duration="9884000" />
       <workItem from="1751029064008" duration="2740000" />
       <workItem from="1751037277075" duration="977000" />
+      <workItem from="1751042621530" duration="16003000" />
+      <workItem from="1751065372517" duration="5374000" />
+      <workItem from="1751102079561" duration="13338000" />
     </task>
     <servers />
   </component>

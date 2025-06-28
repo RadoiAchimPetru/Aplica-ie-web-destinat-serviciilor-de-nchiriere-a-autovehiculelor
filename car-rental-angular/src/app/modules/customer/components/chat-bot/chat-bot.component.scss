@@ -1,0 +1,24 @@
+/* chat-bot.component.scss */
+.chat-toggle {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+}
+
+.chat-window {
+  position: fixed;
+  right: 24px;
+  bottom: 96px;
+  width: 320px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.messages { flex: 1; overflow: auto; padding: 12px; }
+.user     { text-align: right; color: #108ee9; margin: 4px 0; }
+.bot      { text-align: left;  color: #555;     margin: 4px 0; }
+form      { padding: 8px; border-top: 1px solid #eee; }

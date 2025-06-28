@@ -1,0 +1,7 @@
+<app-payment-card (cardValidated)="onCardValidated($event)"></app-payment-card>
+
+<button nz-button nzType="primary" class="w-full mt-4"
+        [disabled]="!paymentMethodId || loading"
+        (click)="pay()">
+  {{ loading ? 'Plătesc…' : 'Plătește' }}
+</button>

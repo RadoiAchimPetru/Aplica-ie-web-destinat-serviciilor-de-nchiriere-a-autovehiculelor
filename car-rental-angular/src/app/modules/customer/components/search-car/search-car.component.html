@@ -1,0 +1,66 @@
+<div class="dashboard-filter">
+  <form [formGroup]="searchCarForm">
+    <div class="filter-grid">
+      <nz-form-item>
+        <nz-form-label>Brand</nz-form-label>
+        <nz-form-control>
+          <nz-select formControlName="brand" nzAllowClear nzPlaceHolder="Selectează brandul">
+            <nz-option *ngFor="let brand of listOfBrands" [nzValue]="brand" [nzLabel]="brand"></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Type</nz-form-label>
+        <nz-form-control>
+          <nz-select formControlName="type" nzAllowClear nzPlaceHolder="Selectează tipul">
+            <nz-option *ngFor="let type of listOfTypes" [nzValue]="type" [nzLabel]="type"></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Transmision</nz-form-label>
+        <nz-form-control>
+          <nz-select formControlName="transmission" nzAllowClear nzPlaceHolder="Selectează transmisia">
+            <nz-option *ngFor="let trans of listOfTransmissions" [nzValue]="trans" [nzLabel]="trans"></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label>Color</nz-form-label>
+        <nz-form-control>
+          <nz-select formControlName="color" nzAllowClear nzPlaceHolder="Selectează culoarea">
+            <nz-option *ngFor="let color of listOfColor" [nzValue]="color" [nzLabel]="color"></nz-option>
+          </nz-select>
+        </nz-form-control>
+      </nz-form-item>
+
+      <div style="margin-top: 10px">
+        <button nz-button nzType="primary" (click)="searchCar()">Caută mașini</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<hr />
+
+<nz-spin [nzSpinning]="isSpinning">
+  <div class="car-card-grid">
+    <div *ngFor="let car of cars" class="car-card">
+      <img [src]="car.processedImg" class="car-img" />
+      <div class="car-info">
+        <h3>{{ car.brand }} - {{ car.name }}</h3>
+        <p><strong>Price:</strong> € {{ car.price }} / zi</p>
+        <p><strong>Color:</strong> {{ car.color }}</p>
+        <p><strong>Transmision</strong> {{ car.transmission }}</p>
+        <p><strong>Type:</strong> {{ car.type }}</p>
+        <button nz-button nzType="primary"
+        [routerLink]="['/customer/book', car.id]">
+        Booking Car
+        </button>
+      </div>
+    </div>
+  </div>
+</nz-spin>

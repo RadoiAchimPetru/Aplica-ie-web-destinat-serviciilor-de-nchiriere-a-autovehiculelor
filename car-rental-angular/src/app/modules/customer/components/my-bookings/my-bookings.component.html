@@ -1,0 +1,15 @@
+<nz-spin [nzSpinning]="isSpinning">
+  <div *ngFor="let booking of bookings" class="booking-card p-4 mb-4 border rounded">
+    <h3>
+      {{ booking.car?.brand || '–' }} – {{ booking.car?.name || '–' }}
+    </h3>
+    <p>
+      Perioadă:
+      <strong>{{ booking.fromDate | date:'dd.MM.yyyy' }}</strong>
+      –
+      <strong>{{ booking.toDate   | date:'dd.MM.yyyy' }}</strong>
+      ({{ booking.fromDate | dateDiff: booking.toDate }} zile)
+    </p>
+    <p>Status: <i>{{ booking.bookCarStatus }}</i></p>
+  </div>
+</nz-spin>

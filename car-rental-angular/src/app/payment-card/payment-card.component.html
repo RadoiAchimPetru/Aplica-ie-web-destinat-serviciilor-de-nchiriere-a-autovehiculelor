@@ -1,0 +1,21 @@
+<form class="flex flex-col gap-4" (ngSubmit)="validateCard()">
+  <!-- Stripe Elements -->
+  <ngx-stripe-card [options]="cardOptions"></ngx-stripe-card>
+
+  <!-- date brute pentru Luhn -->
+  <div class="grid grid-cols-2 gap-4">
+    <input nz-input placeholder="Card number"
+           name="cardNumber" [(ngModel)]="model.cardNumber" required />
+    <input nz-input placeholder="CVC"
+           name="cvc" [(ngModel)]="model.cvc" required />
+    <input nz-input placeholder="MM"
+           name="expMonth" [(ngModel)]="model.expMonth" required />
+    <input nz-input placeholder="YYYY"
+           name="expYear" [(ngModel)]="model.expYear" required />
+  </div>
+
+  <button nz-button nzType="primary" class="w-full"
+          [disabled]="loading">
+    {{ loading ? 'Validare…' : 'Validate card' }}
+  </button>
+</form>
